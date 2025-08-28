@@ -1,1 +1,1 @@
-This project is part of the Kodbud Web Development Internship (Task 1: Design a Personal Portfolio website ). Built using HTML & CSS and JavaScript with modern styling practices Clean and structured code for easy customization
+This project is part of the Kodbud Web Development Internship (Task 1: Design a Personal Portfolio website ). Built using HTML , CSS and JavaScript with modern styling practices Clean and structured code for easy customization
