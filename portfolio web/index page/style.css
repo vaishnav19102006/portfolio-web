@@ -1,0 +1,316 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    /* background-color: rgb(0, 0, 33); */
+    color: black;
+    font-family: "Poppins", sans-serif;
+    /* overflow-x: hidden; */
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: rgb(18, 18, 62); */
+    background: blueviolet;
+    height: 75px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 22px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* first section styling */
+#leftsec {
+    font-size: 1.5rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 0 50px 0;
+
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsec {
+    font-size: 2rem;
+
+}
+
+.leftsec .buttons {
+    padding: 10px 0;
+}
+
+.leftsec .btns {
+    /* font-size: 2rem; */
+    background-color: blueviolet;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.rightsec img {
+    width: 80%;
+    margin: 50px 0;
+}
+
+.purple {
+    color: blueviolet;
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: rgba(153, 153, 226);
+    font-size: 1.02rem;
+}
+
+
+
+/* animation styling */
+#element {
+    color: blueviolet;
+}
+
+/* changing the color of hr */
+main hr {
+    border: 0;
+    background: black;
+    height: 1px;
+    width: 80vw;
+    margin: 40px 110px;
+}
+
+/* Section 2 styling */
+.section2 {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 30px;
+
+}
+
+.section2 h1 {
+    font-size: 1.9rem;
+
+}
+
+.text_grey {
+    color: gray;
+}
+
+
+.section2 .box {
+    background: blueviolet;
+    height: 5px;
+    width: 80vw;
+    margin: 70px 0 58px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section2 .vertical {
+    background: blueviolet;
+    height: 90px;
+    width: 2px;
+
+}
+
+.vertical .pic img {
+    width: 23px;
+    position: relative;
+    top: -28px;
+    left: -12px;
+}
+
+.vertical .top {
+    position: relative;
+    top: 58px;
+    width: 202px;
+    left: -50px;
+    padding-top: 7px;
+
+}
+
+.vertical .bottom {
+    position: relative;
+    top: 61px;
+    left: -50px;
+    width: 120px;
+    color: gray;
+    font-size: 15px;
+}
+
+/* Section 3 styling */
+.section3 {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+    margin-bottom: 100px;
+}
+
+.section3 h1 {
+    font-size: 1.9rem;
+}
+
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background: gray;
+    height: 90%;
+
+
+}
+
+th {
+    background: blueviolet;
+}
+
+td {
+    color: black;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+
+}
+
+.container {
+    height: 80vh;
+}
+
+/* section 4 styling */
+
+.section4 {
+
+    max-width: 80vw;
+    margin: auto;
+    height: 60vh;
+    margin-bottom: 10px;
+}
+
+.section4 .tops h1 {
+    font-size: 1.9rem;
+}
+
+.section4 .bottoms {
+    margin-top: 30px;
+    color: gray;
+    /* font-size: 1.5rem; */
+    line-height: 2;
+
+}
+
+
+/* footer styling */
+footer {
+    background: black;
+    /* height: 240px; use height only for designing */
+    color: white;
+    height: 51vh;
+}
+
+footer .last {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.last>div {
+    width: 223px;
+}
+
+footer .last ul {
+    list-style: none;
+    margin: 20px 0;
+}
+
+footer .last ul a {
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+footer .last ul li {
+    padding: 5px;
+}
+
+/* copyright styling */
+footer .allrights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: gray;
+    padding: 15px 0;
+}
+
+
+
+/* section trasition */
+section[data-animate] {
+    opacity: 0;
+    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    will-change: transform, opacity;
+}
+
+section[data-animate="left"] {
+    transform: translateX(-50px);
+}
+
+section[data-animate="right"] {
+    transform: translateX(50px);
+}
+
+section[data-animate="up"] {
+    transform: translateY(50px);
+}
+
+section[data-animate].show {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    section[data-animate] {
+        transition: none;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+/* for footer */
+
+[data-animate] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-animate].show {
+    opacity: 1;
+    transform: translateY(0);
+}
